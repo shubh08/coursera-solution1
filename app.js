@@ -8,7 +8,7 @@ $scope.message="The input tab is empty right now!!";
 
 $scope.lunch_checkerfun = function ()
 {
-if($scope.lunch=='null')
+if($scope.lunch==null)
 {
 $scope.message="Empty";
 
