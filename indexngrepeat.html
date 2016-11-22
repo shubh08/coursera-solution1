@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="ShoppingListApp">
+  <head>
+    <meta charset="utf-8">
+    <title>ngrepeat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="ngrepeatapp.js"></script>
+    <style media="screen">
+      body {font-size: 1.2em;}
+    </style>
+  </head>
+
+  <body>
+    <h1>ng-repeat</h1>
+    <div ng-controller='ShoppingListController'>
+    <h3>Shopping List:</h3>
+      <ul>
+    <li ng-repeat="item in shoppingList1">{{item}}</li>
+    <li ng-repeat="itemm in shoppingList2">{{itemm}}</li>
+
+    <input type="text" ng-model="inputItemName" placeholder="Enter the item name">
+    <input type="text" ng-model="inputItemQuantity" placeholder="Enter the item Quantity">
+    <button type="button" ng-click="addItem()">Add Item!!</button>
+      </ul>
+
+
+    </div>
+
+
+  </body>
+</html>

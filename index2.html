@@ -10,7 +10,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="app2.js"></script>
+    <script src="app3.js"></script>
     <title>Custom Filter</title>
   </head>
 
@@ -19,8 +19,10 @@
     <div ng-controller="imageController">
 
     <h1 align="center"> Car present or not</h1>
+    <h2>{{changeVehicleName()}}</h2>
+    
 
-      <button type="button" class="btn btn-primary" ng-click="changeImage()">Get a car!!</button> <br>
+      <button type="button" class="btn btn-primary" ng-click="changeImage()">Get The car!!</button> <br>
       <img src="image{{state}}.jpg" height="300mm" width="300mm"  align="middle">
       <h2 align="center">{{mesg}}</h2>
 
